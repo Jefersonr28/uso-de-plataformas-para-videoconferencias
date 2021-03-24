@@ -1,0 +1,255 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/header-consejos.jpg);
+    background-position:center;
+    background-size:cover;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+}
+header .texto-header .h1-otras{
+    font-size: 90px;
+    text-align: end;
+    color: rgba(255, 255, 255, 0.826);
+}
+header .texto-header h2{
+    text-align: end;
+    color: rgba(255, 255, 255, 0.826);
+}
+header .texto-header .h1-otras{
+    font-size: 135px;
+}
+/*---------*/
+/*background: rgba(0, 0, 0, 0.977)*/
+.skew-arrow{
+    height: 25vh;
+}
+.skew-left{
+    position: absolute;
+    left:0;
+    bottom: 0;
+    width: 50%;
+}
+.skew-right{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+}
+.position-skew{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+    .left-line{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-width: 20vh 0 0 50vw;
+        border-style: solid;
+        border-color: transparent transparent transparent #060606;
+    }
+    .right-line{
+        position:absolute;
+        bottom: 0;
+        right: 0;
+        border-width: 0 0 20vh 50vw;
+        border-style: solid;
+        border-color: transparent transparent #060606 transparent;
+    }
+/**/
+.skew-content{
+    width: 100%;
+    height: 30vh;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/header-consejos.jpg);
+    background-position:center;
+    background-size:cover;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+}
+.skew-size{
+    height: 100%;
+}
+    .left-top{
+        position: absolute;
+        top: 0;
+        border-width: 0 50vw 18vh 0;
+        border-style: solid;
+        border-color: transparent #060606 transparent transparent;
+    }
+    .right-top{
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-width: 18vh 50vw 0 0;
+        border-style: solid;
+        border-color: #060606 transparent transparent transparent;
+    }
+/*-----*/
+.box-info{
+    width: 45%;
+}
+    .box-purple-black .info-2{
+        width: 95%;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+        .box-purple-black .info-2 h1{
+            padding: 8px;
+        }
+        .box .info-2 ul li{
+            padding: 5px;
+        }
+    .box-purple-black .box-2{
+        justify-content: center;
+    }
+    .box-purple-black .info-3{
+        width: 32%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        margin: 11px 0px;
+    }
+        .info-3 .img{
+            width: 240px;
+            height: 240px;
+            margin: 8px 0px;
+            object-fit: cover;
+        }
+        .box-purple-black .info-3 h1{
+            padding: 10px;
+        }
+        .box .info-3 ul li{
+                padding: 8px;
+        }
+        .box .info-3 ul li a{
+            line-height: 18px;
+        }
+    .box-purple-black .info-4{
+        justify-content: center;
+    }
+        .box-purple-black .info-4 .box-info{
+            width: 90%;
+            padding: 25px;
+        }
+        .box-purple-black .info-4 h1{
+            padding: 8px;
+        }
+        .box-purple-black .info-4 .video{
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+    main .box-5 .info-5-pad{
+        padding: 120px 0px;
+    }
+        .box-purple-black .info-5{
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 25px;
+        }
+        .box-purple-black .info-5 .img{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            padding-top: 10px;
+        }
+        .box-purple-black .info-5 h1{
+            padding: 10px 0px;
+            font-size: 18px;
+        }
+
+/*----*/
+footer{
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(../images/header-consejos.jpg);
+	background-position:center;
+	background-size:cover;
+	background-attachment:fixed;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width: 865px){
+    .box-info{
+        width: 95%;
+        padding: 15px 10px;
+        margin: 20px 0px;
+    }
+    .box-img{
+        width: 310px;
+        height: 310px;
+    }
+    header .texto-header .h1-otras{
+        font-size: 100px;
+    }
+    header .texto-header h2{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .box-3-c{
+        display: flex;
+    }
+        .box-3-c .info-3{
+            width: 50%;
+        }
+    .info-5-pad .info-5{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 640px){
+    .box-3-c .info-3{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 500px){
+    .box{
+        width: 98%;
+    }
+    .box-info{
+        padding: 0;
+    }
+        .box .box-title-1{
+            padding: 0;
+        }
+    header .texto-header{
+        padding: 10px;
+    }
+    .info-5-pad .info-5{
+        width: 90%;
+    }
+        .box-purple-black .info-5 .img{
+            width: 310px;
+            height: 310px;
+        }
+}
+@media screen and (max-width: 365px){
+    header .texto-header .h1-otras{
+        font-size: 65px;
+        text-align: center;
+    }
+    header .texto-header h2{
+        font-size: 14px;
+        text-align: center;
+    }
+    .texto-header{
+        padding: 10px;
+    }
+    .box-info-3 .infoo-3{
+        width: 95%;
+    }
+    .box-purple-black .info-5 .img{
+        width: 280px;
+        height: 280px;
+    }
+
+}
